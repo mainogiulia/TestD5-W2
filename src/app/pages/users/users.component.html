@@ -1,4 +1,4 @@
-<div class="card mb-3" *ngFor="let user of users">
+<div class="userWrapper card mb-3" *ngFor="let user of users">
   <div class="row g-0">
     <div class="col-md-4 d-flex">
       <img
@@ -11,10 +11,23 @@
       <div class="card-body">
         <h4 class="card-title">{{ user.firstName }} {{ user.lastName }}</h4>
         <h6 class="card-text">{{ user.title }}</h6>
-        <p class="card-text">{{ user.email }}</p>
+        <p class="card-text">Email: {{ user.email }}</p>
         <ul *ngIf="user.todo && user.todo.length > 0">
           <li *ngFor="let todo of user.todo">
-            {{ todo.todo }}
+            <div
+              class="taskDiv"
+              [ngStyle]="{
+                background: todo.completed ? '#d8b9ec' : '#bac6f8'
+              }"
+            >
+              <div class="align-checkbox">
+                <label class="customCheckbox">
+                  <input type="checkbox" [(ngModel)]="todo.completed" />
+                  <span class="checkmark"></span>
+                </label>
+                <h5>{{ todo.todo }}</h5>
+              </div>
+            </div>
           </li>
         </ul>
       </div>

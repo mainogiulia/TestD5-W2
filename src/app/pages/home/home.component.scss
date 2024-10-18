@@ -38,6 +38,7 @@
     display: none;
     &:checked + .checkmark {
       background-size: 80%;
+      background-color: #aa73ce;
     }
   }
 }

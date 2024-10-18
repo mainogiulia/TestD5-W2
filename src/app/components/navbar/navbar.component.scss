@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap");
+
 main {
   display: flex;
   background-color: #201c1d;
   gap: 2rem;
+  font-family: "Afacad Flux", sans-serif;
 }
 
 .sidebar {
@@ -13,16 +16,15 @@ main {
   }
 }
 
-// .currentPage {
-//   background-color: #f4b5d6;
-//   color: #201c1d;
-// }
-
 a {
-  color: #f4b5d6;
+  color: #f1929e;
   font-weight: 700;
+  font-size: 25px;
   &:hover {
     color: #8a4b6c;
-    font-size: 110%;
+    font-size: 190%;
+  }
+  &:last-of-type {
+    font-size: 20px;
   }
 }
