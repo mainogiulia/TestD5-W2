@@ -1,8 +1,16 @@
 <div
+  class="taskDiv"
   *ngFor="let task of tasks"
-  [ngStyle]="{ background: task.completed ? 'green' : 'red' }"
+  [ngStyle]="{
+    background: task.completed ? '#bac6f8' : '#d8b9ec'
+  }"
 >
-  <h3>{{ task.todo }}</h3>
+  <div class="align-checkbox">
+    <label class="customCheckbox">
+      <input type="checkbox" [(ngModel)]="task.completed" />
+      <span class="checkmark"></span>
+    </label>
+    <h3>{{ task.todo }}</h3>
+  </div>
   <p>User: {{ task.userName }}</p>
-  <input type="checkbox" [(ngModel)]="task.completed" />
 </div>
