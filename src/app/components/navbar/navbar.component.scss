@@ -1,31 +1,28 @@
 main {
   display: flex;
-  background: rgb(186, 198, 248);
-  background: linear-gradient(
-    0deg,
-    rgba(186, 198, 248, 1) 19%,
-    rgba(216, 185, 236, 1) 44%,
-    rgba(244, 181, 214, 1) 62%,
-    rgba(253, 194, 211, 0.7399334733893557) 100%
-  );
+  background-color: #201c1d;
+  gap: 2rem;
 }
 
 .sidebar {
   width: 250px;
-  background: rgb(186, 198, 248);
-  background: linear-gradient(
-    0deg,
-    rgba(186, 198, 248, 1) 19%,
-    rgba(216, 185, 236, 1) 44%,
-    rgba(244, 181, 214, 1) 62%,
-    rgba(253, 194, 211, 0.7399334733893557) 100%
-  );
-  span {
-    color: #d8b9ec;
-    font-weight: 500;
+  background-color: #201c1d;
+  .topPage {
+    color: #f4b5d6;
+    font-weight: 700;
   }
 }
 
-.currentPage {
-  background-color: #d8b9ec;
+// .currentPage {
+//   background-color: #f4b5d6;
+//   color: #201c1d;
+// }
+
+a {
+  color: #f4b5d6;
+  font-weight: 700;
+  &:hover {
+    color: #8a4b6c;
+    font-size: 110%;
+  }
 }

@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+.taskDiv {
+  border-radius: 10px;
+  margin-block: 1rem;
+  padding: 0.5rem;
+  p {
+    padding-left: 43px;
+  }
+}
+
+.align-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  input {
+    size: 1rem;
+  }
+}
+
+.customCheckbox {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  .checkmark {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #aa73ce;
+    display: inline-block;
+    border-radius: 2px;
+    background: transparent
+      url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/1200px-White_check.svg.png)
+      center/1200% no-repeat;
+  }
+  input {
+    display: none;
+    &:checked + .checkmark {
+      background-size: 80%;
+    }
+  }
+}

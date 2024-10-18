@@ -17,6 +17,5 @@ export class UsersComponent {
     this.usersSvc.getTasktoAuthor(this.tasksSvc.tasks);
 
     this.users = this.usersSvc.users;
-    console.log(this.users);
   }
 }

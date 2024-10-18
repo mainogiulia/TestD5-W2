@@ -1,6 +1,6 @@
-<div class="card mb-3" *ngFor="let user of users; index as i">
+<div class="card mb-3" *ngFor="let user of users">
   <div class="row g-0">
-    <div class="col-md-4">
+    <div class="col-md-4 d-flex">
       <img
         [src]="user.image"
         class="img-fluid rounded-start"
@@ -12,7 +12,11 @@
         <h4 class="card-title">{{ user.firstName }} {{ user.lastName }}</h4>
         <h6 class="card-text">{{ user.title }}</h6>
         <p class="card-text">{{ user.email }}</p>
-        <p class="card-text">{{ user.todo }}</p>
+        <ul *ngIf="user.todo && user.todo.length > 0">
+          <li *ngFor="let todo of user.todo">
+            {{ todo.todo }}
+          </li>
+        </ul>
       </div>
     </div>
   </div>

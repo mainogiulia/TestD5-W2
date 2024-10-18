@@ -1,50 +1,23 @@
 <main>
-  <div class="sidebar d-flex flex-column flex-shrink-0 p-3 bg-light">
-    <a
-      href="/"
-      class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
-    >
-      <svg class="bi me-2" width="40" height="32">
-        <use xlink:href="#bootstrap"></use>
-      </svg>
-      <span class="fs-4">Sidebar</span>
-    </a>
+  <div class="sidebar d-flex flex-column flex-shrink-0 p-3">
+    <img src="/sample_0.jpg" alt="app logo" />
     <hr />
     <ul class="nav nav-pills flex-column mb-auto">
       <li class="nav-item">
-        <a
-          routerLink="/"
-          class="nav-link link-dark"
-          aria-current="page"
-          routerLinkActive="currentPage"
-        >
-          To do
-        </a>
+        <a routerLink="/" class="nav-link" aria-current="page"> To do </a>
       </li>
       <li>
-        <a
-          routerLink="/completed"
-          class="nav-link link-dark"
-          routerLinkActive="currentPage"
-        >
-          Completed
-        </a>
+        <a routerLink="/completed" class="nav-link"> Completed </a>
       </li>
       <li>
-        <a
-          routerLink="/users"
-          class="nav-link link-dark"
-          routerLinkActive="currentPage"
-        >
-          Users
-        </a>
+        <a routerLink="/users" class="nav-link"> Users </a>
       </li>
     </ul>
     <hr />
     <div class="dropdown">
       <a
         href="#"
-        class="d-flex align-items-center link-dark text-decoration-none"
+        class="d-flex align-items-center text-decoration-none"
         aria-expanded="false"
       >
         <p class="topPage">Go to the top of the page</p>
